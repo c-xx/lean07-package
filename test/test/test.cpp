@@ -6,6 +6,7 @@ using namespace std;
 
 class Student {
 public:
+	Student() :m_strName("Jim"), m_iScore(10) {}
 	void setName(string _name) {
 		m_strName = _name;
 	}
@@ -38,11 +39,7 @@ private:
 };
 
 
-
-
 int main(void) {
-
-
 	Student stu;
 	stu.initScore();
 	stu.setName("zhangsan");
@@ -53,6 +50,8 @@ int main(void) {
 
 	cout << stu.getName() << " " << stu.getGender() << " " << stu.getScore() << endl;
 	
+	Student stu2;
+	cout << stu2.getName() << endl;
 	system("pause");
 	return 0;
 }
